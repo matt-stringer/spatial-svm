@@ -1,5 +1,3 @@
-Twitter Analysis
-================
 
 
 # Project Objective:
