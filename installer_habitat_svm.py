@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 
 from make_bunches import fetch_installer_distributions, construct_grids
 from sklearn.datasets.base import Bunch
+print(sklean.__version__)
 
 from sklearn import svm, metrics
 

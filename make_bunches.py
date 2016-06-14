@@ -123,16 +123,16 @@ def make_test_train_split(file_location, installers):
 					train.append(tuple_items)
 					f1.write(i[0].replace(',', '').replace('  ', ' ') + "," + str(x) + ","+ str(y) + '\n')
 
-	   			elif rand < 0.2:
+				elif rand < 0.2:
 					test.append(tuple_items)
 					f2.write(i[0].replace(',', '').replace('  ', ' ') + "," + str(x) + ","+ str(y) + '\n')
 
 		f1.close()
 		f2.close()
-		print  float(len(train)) / float(len(train) + len(test))
+		print(float(len(train)) / float(len(train) + len(test)))
 	
 	else:
-		print "test train sets written"
+		print("test train sets written")
 
 
 def fetch_installer_distributions(county_name, data_home=None):
